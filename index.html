@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elevated Optics RVA</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
   <style>
     body {
       margin: 0;
@@ -12,19 +13,49 @@
       background-color: #f5f7fa;
       color: #1f2937;
     }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
     header {
       background-color: #1e3a8a;
       color: white;
       padding: 2rem 1rem;
-      text-align: center;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .logo-img {
+      height: 50px;
+      width: auto;
+      border-radius: 4px;
     }
     header h1 {
       margin: 0;
       font-size: 2.5rem;
     }
-    header p {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    nav li a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    nav li a:hover {
+      text-decoration: underline;
     }
     section {
       padding: 3rem 1rem;
@@ -97,9 +128,20 @@
 </head>
 <body>
 
-  <header>
-    <h1>Elevated Optics RVA</h1>
-    <p>FAA Part 107 Certified | Aerial Imaging & Inspection Services</p>
+  <header class="header">
+    <div class="container">
+      <div class="logo-container">
+        <img src="ElevatedOpticsLogo.png" alt="Elevated Optics RVA Logo" class="logo-img" />
+        <h1>Elevated Optics RVA</h1>
+      </div>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <section class="about">
@@ -107,7 +149,7 @@
     <p>Welcome to Elevated Optics RVA — a solo-operated, FAA Part 107 certified drone services business based in Richmond, VA. Specializing in high-resolution aerial photography, real estate media, and inspection imaging, we deliver a bird's-eye view that brings clarity and impact to your projects.</p>
   </section>
 
-  <section class="services">
+  <section class="services" id="services">
     <h2 class="section-title">Services</h2>
     <ul>
       <li>🏠 Real Estate Photography & Video Tours</li>
@@ -117,7 +159,7 @@
     </ul>
   </section>
 
-  <section class="gallery">
+  <section class="gallery" id="gallery">
     <h2 class="section-title">Gallery</h2>
     <div class="gallery-grid">
       <img src="https://via.placeholder.com/400x250.png?text=Sample+1" alt="Sample 1">
@@ -144,7 +186,7 @@
     <p style="margin-top:1rem;font-size:0.9rem;">Powered by <a href="https://formspree.io" target="_blank">Formspree</a></p>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="contact">
     <h2 class="section-title">Contact</h2>
     <p>Email: <a href="mailto:CoryB@elevatedopticsrva.com">CoryB@elevatedopticsrva.com</a></p>
     <p>Instagram: <a href="https://instagram.com/elevatedopticsrva" target="_blank">@elevatedopticsrva</a></p>
