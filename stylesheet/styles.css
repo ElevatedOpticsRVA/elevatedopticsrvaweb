@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f7fa;
+  color: #1f2937;
+}
+
+header {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 1rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+
+.business-title {
+  flex-grow: 1;
+}
+
+.business-title h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.business-title p {
+  margin: 0;
+  font-size: 1rem;
+  color: #dbeafe;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1e3a8a;
+}
+
+.about, .contact, .services {
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  nav ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .business-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .business-title p {
+    font-size: 0.9rem;
+  }
+
+  .logo-img {
+    margin-bottom: 1rem;
+  }
+}
