@@ -13,11 +13,17 @@ header {
 
 .header-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 1rem;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-img {
@@ -25,7 +31,6 @@ header {
   width: auto;
   border-radius: 4px;
   margin-left: 1rem;
-  margin-right: 0;
 }
 
 .business-title {
