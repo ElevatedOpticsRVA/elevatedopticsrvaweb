@@ -34,8 +34,15 @@
 
   <section class="form-section">
   <h2 class="section-title">Request a Quote</h2>
-  <form class="contact-form" action="https://formspree.io/f/xvgranwy" method="POST">
+  <form action="https://formsubmit.io/send/coryb@elevatedopticsrva.com" method="POST" class="contact-form">
     
+    <!-- Redirect after submit -->
+    <input type="hidden" name="_redirect" value="https://www.elevatedopticsrva.com/contact/thank-you.html" />
+    
+    <!-- Prevent spam -->
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_captcha" value="false">
+
     <div class="form-group">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required />
@@ -52,14 +59,7 @@
     </div>
 
     <button type="submit">Send Request</button>
-    
-    <input type="hidden" name="_redirect" value="https://www.elevatedopticsrva.com/contact/thank-you.html" />
-    <input type="hidden" name="_next"     value="https://www.elevatedopticsrva.com/contact/thank-you.html" />
-
-
   </form>
-
-  <p style="margin-top:1rem;font-size:0.9rem;">Powered by <a href="https://formspree.io" target="_blank">Formspree</a></p>
 </section>
   
   <section class="contact">
