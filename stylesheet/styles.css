@@ -39,7 +39,7 @@ header {
 
 .business-title h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .business-title p {
@@ -60,7 +60,7 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 nav a:hover {
