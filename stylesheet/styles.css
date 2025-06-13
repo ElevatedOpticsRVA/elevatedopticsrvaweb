@@ -144,6 +144,33 @@ button[type="submit"] {
   transition: background-color 0.3s ease;
 }
 
+.thank-you {
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 3rem auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.thank-you p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+.return-link {
+  color: #1e3a8a;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.return-link:hover {
+  text-decoration: underline;
+}
+
+
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
