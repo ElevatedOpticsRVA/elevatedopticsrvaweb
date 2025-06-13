@@ -118,6 +118,6 @@ section {
   }
 
   .logo-img {
-    margin-bottom: 1rem;
+    display: none;
   }
 }
