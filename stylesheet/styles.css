@@ -173,7 +173,7 @@ button[type="submit"] {
 .hero {
   position: relative;
   height: 60vh;
-  background-image: url('/media/hero-placeholder.jpg'); /* Replace this with your drone photo later */
+  background-image: url('/media/hero-placeholder.jpeg'); /* Replace this with your drone photo later */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
