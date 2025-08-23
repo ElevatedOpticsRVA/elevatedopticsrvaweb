@@ -1,49 +1,457 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery | Elevated Optics RVA</title>
-    <!-- Favicon -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Professional Aerial Photography | Elevated Optics RVA</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="View our portfolio of professional aerial photography, real estate media, and inspection imaging. See the quality drone services Elevated Optics RVA delivers in Richmond, VA.">
+  <meta name="keywords" content="aerial photography portfolio, drone photography gallery, Richmond VA aerial photos, real estate photography examples">
+  <meta name="author" content="Elevated Optics RVA">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Aerial Photography Gallery - Elevated Optics RVA">
+  <meta property="og:description" content="View our portfolio of professional aerial photography and drone services in Richmond, VA. See the quality and creativity we bring to every project.">
+  <meta property="og:image" content="/media/ElevatedOpticsLogo.png">
+  <meta property="og:url" content="https://elevatedopticsrva.com/gallery">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Aerial Photography Gallery - Elevated Optics RVA">
+  <meta name="twitter:description" content="Professional drone photography portfolio from Richmond, VA.">
+  <meta name="twitter:image" content="/media/ElevatedOpticsLogo.png">
+  
+  <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/media/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon-16x16.png">
   <link rel="manifest" href="/manifest/site.webmanifest">
   <link rel="shortcut icon" href="/media/favicon.ico">
   <link rel="icon" href="/media/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/stylesheet/styles.css" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/stylesheet/styles.css">
+  
+  <!-- Structured Data for Gallery -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "Elevated Optics RVA Photography Gallery",
+    "description": "Professional aerial photography portfolio showcasing drone services in Richmond, VA",
+    "author": {
+      "@type": "LocalBusiness",
+      "name": "Elevated Optics RVA"
+    }
+  }
+  </script>
 </head>
 <body>
-  <header class="header">
-  <div class="header-content">
-    <div class="left-section">
-      <h1>Elevated Optics RVA</h1>
-      <p class="tagline">Professional Aerial Imaging & Inspection</p>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/services/">Services</a></li>
-        <li><a href="/gallery/">Gallery</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
-    </nav>
-    <img src="/media/ElevatedOpticsLogo.png" alt="Elevated Optics RVA Logo" class="logo-img" />
-  </div>
-</header>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="sr-only">Skip to main content</a>
 
-  <section class="gallery">
-    <h2 class="section-title">Gallery</h2>
-    <div class="gallery-grid">
-      <img src="https://via.placeholder.com/400x250.png?text=Sample+1" alt="Sample 1">
-      <img src="https://via.placeholder.com/400x250.png?text=Sample+2" alt="Sample 2">
-      <img src="https://via.placeholder.com/400x250.png?text=Sample+3" alt="Sample 3">
-      <img src="https://via.placeholder.com/400x250.png?text=Sample+4" alt="Sample 4">
+  <header class="header">
+    <div class="header-content">
+      <div class="left-section">
+        <h1>Elevated Optics RVA</h1>
+        <p class="tagline">Professional Aerial Imaging & Inspection</p>
+      </div>
+      <nav role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/gallery/" aria-current="page">Gallery</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+      <img src="/media/ElevatedOpticsLogo.png" alt="Elevated Optics RVA - Professional Drone Services Logo" class="logo-img" loading="lazy" />
     </div>
-  </section>
+  </header>
+
+  <main id="main-content">
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+      <div class="gallery-hero-content">
+        <h1>Our Portfolio</h1>
+        <p>Explore our collection of professional aerial photography, real estate media, and inspection imaging from across Richmond, VA and surrounding areas.</p>
+      </div>
+    </section>
+
+    <!-- Portfolio Filter Section -->
+    <section class="gallery-filters">
+      <div class="filter-container">
+        <h2 class="sr-only">Filter Gallery by Category</h2>
+        <button class="filter-btn active" data-filter="all">All Work</button>
+        <button class="filter-btn" data-filter="real-estate">Real Estate</button>
+        <button class="filter-btn" data-filter="aerial">Aerial Photography</button>
+        <button class="filter-btn" data-filter="inspection">Inspections</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+      </div>
+    </section>
+
+    <!-- Main Gallery Section -->
+    <section class="gallery-section">
+      <div class="gallery-grid" id="gallery-grid">
+        
+        <!-- Real Estate Examples -->
+        <div class="gallery-item" data-category="real-estate">
+          <img src="https://via.placeholder.com/600x400.png?text=Luxury+Home+Aerial" alt="Luxury home aerial photography showcasing property and landscaping" loading="lazy">
+          <div class="gallery-overlay">
+            <h3>Luxury Home Showcase</h3>
+            <p>Henrico County • Real Estate</p>
+            <button class="view-full" aria-label="View full image of luxury home aerial photography">View Full</button>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="real-estate">
+          <img src="https://via.placeholder.com/600x400.png?text=Commercial+Property" alt="Commercial property aerial view highlighting location and accessibility" loading="lazy">
+          <div class="gallery-overlay">
+            <h3>Commercial Property</h3>
+            <p>Richmond, VA • Real Estate</p>
+            <button class="view-full" aria-label="View full image of commercial property">View Full</button>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="real-estate">
+          <img src="https://via.placeholder.com/600x400.png?text=Waterfront+Estate" alt="Waterfront estate aerial photography showing water access and grounds" loading="lazy">
+          <div class="gallery-overlay">
+            <h3>Waterfront Estate</h3>
+            <p>Chesterfield County • Real Estate</p>
+            <button class="view-full" aria-label="View full image of waterfront estate">View Full</button>
+          </div>
+        </div>
+
+        <!-- Aerial Photography Examples -->
+        <div class="gallery-item" data-category="aerial">
+          <img src="https://via.placeholder.com/600x400.png?text=Richmond+Skyline" alt="Richmond Virginia skyline from aerial perspective" loading="lazy">
+          <div class="gallery-overlay">
+            <h3>Richmond Skyline</h3>
+            <p>Downtown Richmond • Aerial</p>
+            <button class="view-full" aria-label="View full image of Richmond skyline">View Full</button>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="aerial">
+          <img src="https://via.placeholder.com/600x400.png?text=James+River+Vista" alt="James River aerial view showing natural beauty and surrounding landscape" loading="lazy">
+          <div class="gallery-overlay">
+            <h3>James River Vista</h3>
+            <p>Richmond, VA • Aerial</p>
+            <button class="view-full" aria-label="View full image of James River vista">View Full</button>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="aerial">
+          <img src="https://via.placeholder.com/600x400.png?text=Fall+Foliage+Landscape" alt="Autumn landscape aerial photography showcasing seasonal colors" loading="lazy">
+          <div class="gallery-overlay">
+            <h3>Fall Foliage Landscape</h3>
+            <p>Hanover County • Aerial</p>
+            <button class="view-full" aria-label="View full image of fall foliage landscape">View Full</button>
+          </div>
+        </div>
+
+        <!-- Inspection Examples -->
+        <div class="gallery-item" data-category="inspection">
+          <img src="https://via.placeholder.com/600x400.png?text=Roof+Inspection" alt="Professional roof inspection imagery showing detailed assessment" loading="lazy">
+          <div class="gallery-overlay">
+            <h3>Roof Inspection</h3>
+            <p>Commercial Building • Inspection</p>
+            <button class="view-full" aria-label="View full image of roof inspection">View Full</button>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="inspection">
+          <img src="https://via.placeholder.com/600x400.png?text=Solar+Panel+Survey" alt="Solar panel installation aerial survey for maintenance assessment" loading="lazy">
+          <div class="gallery-overlay">
+            <h3>Solar Panel Survey</h3>
+            <p>Industrial Site • Inspection</p>
+            <button class="view-full" aria-label="View full image of solar panel survey">View Full</button>
+          </div>
+        </div>
+
+        <!-- Commercial Examples -->
+        <div class="gallery-item" data-category="commercial">
+          <img src="https://via.placeholder.com/600x400.png?text=Construction+Progress" alt="Construction site aerial documentation showing project progress" loading="lazy">
+          <div class="gallery-overlay">
+            <h3>Construction Progress</h3>
+            <p>Development Site • Commercial</p>
+            <button class="view-full" aria-label="View full image of construction progress">View Full</button>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="commercial">
+          <img src="https://via.placeholder.com/600x400.png?text=Corporate+Campus" alt="Corporate campus aerial view highlighting facilities and layout" loading="lazy">
+          <div class="gallery-overlay">
+            <h3>Corporate Campus</h3>
+            <p>Business District • Commercial</p>
+            <button class="view-full" aria-label="View full image of corporate campus">View Full</button>
+          </div>
+        </div>
+
+        <!-- Events Examples -->
+        <div class="gallery-item" data-category="events">
+          <img src="https://via.placeholder.com/600x400.png?text=Festival+Aerial" alt="Outdoor festival aerial photography capturing crowd and event layout" loading="lazy">
+          <div class="gallery-overlay">
+            <h3>Community Festival</h3>
+            <p>Public Event • Events</p>
+            <button class="view-full" aria-label="View full image of community festival">View Full</button>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events">
+          <img src="https://via.placeholder.com/600x400.png?text=Wedding+Venue" alt="Wedding venue aerial photography showcasing ceremony and reception areas" loading="lazy">
+          <div class="gallery-overlay">
+            <h3>Wedding Venue</h3>
+            <p>Special Event • Events</p>
+            <button class="view-full" aria-label="View full image of wedding venue">View Full</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Gallery Stats Section -->
+    <section class="gallery-stats">
+      <div class="stats-container">
+        <div class="stat-item">
+          <span class="stat-number">100+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">4K</span>
+          <span class="stat-label">Video Resolution</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">24hr</span>
+          <span class="stat-label">Turnaround Time</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="gallery-cta">
+      <h2>Ready to Showcase Your Project?</h2>
+      <p>Let's create stunning aerial imagery that elevates your property, event, or business to new heights.</p>
+      <div class="cta-buttons">
+        <a href="/contact/" class="cta-primary">Get Your Quote</a>
+        <a href="/services/" class="cta-secondary">View Services</a>
+      </div>
+    </section>
+
+    <!-- Image Modal (for full-screen viewing) -->
+    <div id="image-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-content">
+        <span class="modal-close" aria-label="Close modal">&times;</span>
+        <img id="modal-image" src="" alt="">
+        <div class="modal-info">
+          <h3 id="modal-title">Image Title</h3>
+          <p id="modal-description">Image Description</p>
+        </div>
+        <div class="modal-nav">
+          <button id="modal-prev" aria-label="Previous image">‹</button>
+          <button id="modal-next" aria-label="Next image">›</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
 
   <footer class="footer">
-    &copy; 2025 Elevated Optics RVA. All rights reserved.
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Elevated Optics RVA</h3>
+        <p>Professional aerial imaging services in Richmond, VA and surrounding areas.</p>
+        <p><strong>FAA Part 107 Certified</strong> • <strong>Fully Insured</strong></p>
+      </div>
+      <div class="footer-section">
+        <h3>Service Areas</h3>
+        <p>Richmond, VA<br>
+        Henrico County<br>
+        Chesterfield County<br>
+        Hanover County<br>
+        <em>And surrounding areas</em></p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <nav aria-label="Footer navigation">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/services/">Services</a></li>
+            <li><a href="/gallery/">Gallery</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>📧 <a href="mailto:CoryB@elevatedopticsrva.com">CoryB@elevatedopticsrva.com</a><br>
+        📞 <a href="tel:+1-XXX-XXX-XXXX">(XXX) XXX-XXXX</a><br>
+        📍 Richmond, VA</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Elevated Optics RVA. All rights reserved. | <a href="/privacy/">Privacy Policy</a> | <a href="/terms/">Terms of Service</a></p>
+    </div>
   </footer>
+
+  <!-- Gallery JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Filter functionality
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+      const modal = document.getElementById('image-modal');
+      const modalImage = document.getElementById('modal-image');
+      const modalTitle = document.getElementById('modal-title');
+      const modalDescription = document.getElementById('modal-description');
+      const modalClose = document.querySelector('.modal-close');
+      const modalPrev = document.getElementById('modal-prev');
+      const modalNext = document.getElementById('modal-next');
+      
+      let currentImageIndex = 0;
+      let visibleImages = [];
+
+      // Filter functionality
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const filter = button.getAttribute('data-filter');
+          
+          // Update active button
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+          
+          // Filter items
+          galleryItems.forEach(item => {
+            const category = item.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+              item.style.display = 'block';
+              setTimeout(() => item.style.opacity = '1', 50);
+            } else {
+              item.style.opacity = '0';
+              setTimeout(() => item.style.display = 'none', 300);
+            }
+          });
+          
+          // Update visible images array for modal navigation
+          updateVisibleImages();
+        });
+      });
+
+      // Update visible images array
+      function updateVisibleImages() {
+        visibleImages = Array.from(galleryItems).filter(item => 
+          item.style.display !== 'none' && item.style.opacity !== '0'
+        );
+      }
+
+      // Initialize visible images
+      updateVisibleImages();
+
+      // Modal functionality
+      galleryItems.forEach((item, index) => {
+        const viewButton = item.querySelector('.view-full');
+        const image = item.querySelector('img');
+        const title = item.querySelector('h3').textContent;
+        const description = item.querySelector('p').textContent;
+
+        viewButton.addEventListener('click', () => {
+          openModal(image.src, title, description, index);
+        });
+      });
+
+      function openModal(src, title, description, index) {
+        modal.style.display = 'flex';
+        modalImage.src = src;
+        modalTitle.textContent = title;
+        modalDescription.textContent = description;
+        currentImageIndex = index;
+        document.body.style.overflow = 'hidden';
+        modal.setAttribute('aria-hidden', 'false');
+        modalImage.focus();
+      }
+
+      function closeModal() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+        modal.setAttribute('aria-hidden', 'true');
+      }
+
+      modalClose.addEventListener('click', closeModal);
+      
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+
+      // Keyboard navigation
+      document.addEventListener('keydown', (e) => {
+        if (modal.style.display === 'flex') {
+          if (e.key === 'Escape') {
+            closeModal();
+          } else if (e.key === 'ArrowLeft') {
+            navigateModal(-1);
+          } else if (e.key === 'ArrowRight') {
+            navigateModal(1);
+          }
+        }
+      });
+
+      // Modal navigation
+      modalPrev.addEventListener('click', () => navigateModal(-1));
+      modalNext.addEventListener('click', () => navigateModal(1));
+
+      function navigateModal(direction) {
+        const visibleItems = Array.from(galleryItems).filter(item => 
+          window.getComputedStyle(item).display !== 'none'
+        );
+        
+        currentImageIndex += direction;
+        
+        if (currentImageIndex >= visibleItems.length) {
+          currentImageIndex = 0;
+        } else if (currentImageIndex < 0) {
+          currentImageIndex = visibleItems.length - 1;
+        }
+        
+        const newItem = visibleItems[currentImageIndex];
+        const newImage = newItem.querySelector('img');
+        const newTitle = newItem.querySelector('h3').textContent;
+        const newDescription = newItem.querySelector('p').textContent;
+        
+        modalImage.src = newImage.src;
+        modalTitle.textContent = newTitle;
+        modalDescription.textContent = newDescription;
+      }
+
+      // Lazy loading for better performance
+      const images = document.querySelectorAll('img[loading="lazy"]');
+      if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.src = img.src;
+              img.classList.remove('lazy');
+              imageObserver.unobserve(img);
+            }
+          });
+        });
+
+        images.forEach(img => imageObserver.observe(img));
+      }
+    });
+  </script>
 </body>
 </html>
