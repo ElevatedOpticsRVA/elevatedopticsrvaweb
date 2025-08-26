@@ -95,6 +95,23 @@ nav a[aria-current="page"] {
   text-decoration: none;
 }
 
+/* Navigation - header only */
+.header nav ul {
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* Footer Quicklinks - vertical stack */
+.footer-section nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+}
+
 /* Hero Section */
 .hero {
   position: relative;
@@ -1424,7 +1441,7 @@ select {
 
 .footer-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for 4 sections */
   gap: 3rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -1483,6 +1500,19 @@ select {
 .footer-bottom a:hover {
   color: #fbbf24;
   text-decoration: underline;
+}
+
+/* Prevent footer sections from overlapping */
+@media (max-width: 900px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Animations */
