@@ -1783,3 +1783,10 @@ select {
     text-decoration: underline;
   }
 }
+
+.footer-contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  white-space: nowrap;
+}
