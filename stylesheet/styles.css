@@ -61,7 +61,7 @@ body {
 /* Logo improvements */
 .logo-img {
   height: 80px;
-  width: auto;
+  width: 80px;
   border-radius: 8px;
   transition: transform 0.3s ease;
 }

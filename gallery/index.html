@@ -28,7 +28,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon-16x16.png">
   <link rel="manifest" href="/manifest/site.webmanifest">
-  <link rel="shortcut icon" href="/media/favicon.ico">
   <link rel="icon" href="/media/favicon.ico" type="image/x-icon">
   
   <!-- Fonts -->
@@ -55,7 +54,7 @@
 </head>
 <body>
   <!-- Skip to main content for accessibility -->
-  <a href="#main-content" class="sr-only">Skip to main content</a>
+  <a href="#main-content" class="sr-only" tabindex="0">Skip to main content</a>
 
   <header class="header">
     <div class="header-content">
@@ -71,13 +70,13 @@
           <li><a href="/contact/">Contact</a></li>
         </ul>
       </nav>
-      <img src="/media/ElevatedOpticsLogo.png" alt="Elevated Optics RVA - Professional Drone Services Logo" class="logo-img" loading="lazy" />
+  <img src="/media/ElevatedOpticsLogo.png" alt="Elevated Optics RVA Logo" class="logo-img" loading="lazy" width="80" height="80" />
     </div>
   </header>
 
   <main id="main-content">
     <!-- Gallery Hero Section -->
-    <section class="gallery-hero">
+  <section class="gallery-hero" aria-label="Gallery Hero">
       <div class="gallery-hero-content">
         <h1>Our Portfolio</h1>
         <p>Explore our collection of professional aerial photography, real estate media, and inspection imaging from across Richmond, VA and surrounding areas.</p>
@@ -85,7 +84,7 @@
     </section>
 
     <!-- Portfolio Filter Section -->
-    <section class="gallery-filters">
+  <section class="gallery-filters" aria-label="Gallery Filters">
       <div class="filter-container">
         <h2 class="sr-only">Filter Gallery by Category</h2>
         <button class="filter-btn active" data-filter="all">All Work</button>
@@ -98,11 +97,11 @@
     </section>
 
     <!-- Main Gallery Section -->
-    <section class="gallery-section">
-      <div class="gallery-grid" id="gallery-grid">
+  <section class="gallery-section" aria-label="Gallery Section">
+  <div class="gallery-grid" id="gallery-grid" role="list">
         
         <!-- Real Estate Examples -->
-        <div class="gallery-item" data-category="real-estate">
+  <div class="gallery-item" data-category="real-estate" role="listitem">
           <img src="https://via.placeholder.com/600x400.png?text=Luxury+Home+Aerial" alt="Luxury home aerial photography showcasing property and landscaping" loading="lazy">
           <div class="gallery-overlay">
             <h3>Luxury Home Showcase</h3>
@@ -111,7 +110,7 @@
           </div>
         </div>
 
-        <div class="gallery-item" data-category="real-estate">
+  <div class="gallery-item" data-category="real-estate" role="listitem">
           <img src="https://via.placeholder.com/600x400.png?text=Commercial+Property" alt="Commercial property aerial view highlighting location and accessibility" loading="lazy">
           <div class="gallery-overlay">
             <h3>Commercial Property</h3>
@@ -120,7 +119,7 @@
           </div>
         </div>
 
-        <div class="gallery-item" data-category="real-estate">
+  <div class="gallery-item" data-category="real-estate" role="listitem">
           <img src="https://via.placeholder.com/600x400.png?text=Waterfront+Estate" alt="Waterfront estate aerial photography showing water access and grounds" loading="lazy">
           <div class="gallery-overlay">
             <h3>Waterfront Estate</h3>
@@ -130,7 +129,7 @@
         </div>
 
         <!-- Aerial Photography Examples -->
-        <div class="gallery-item" data-category="aerial">
+  <div class="gallery-item" data-category="aerial" role="listitem">
           <img src="https://via.placeholder.com/600x400.png?text=Richmond+Skyline" alt="Richmond Virginia skyline from aerial perspective" loading="lazy">
           <div class="gallery-overlay">
             <h3>Richmond Skyline</h3>
@@ -139,7 +138,7 @@
           </div>
         </div>
 
-        <div class="gallery-item" data-category="aerial">
+  <div class="gallery-item" data-category="aerial" role="listitem">
           <img src="https://via.placeholder.com/600x400.png?text=James+River+Vista" alt="James River aerial view showing natural beauty and surrounding landscape" loading="lazy">
           <div class="gallery-overlay">
             <h3>James River Vista</h3>
@@ -148,7 +147,7 @@
           </div>
         </div>
 
-        <div class="gallery-item" data-category="aerial">
+  <div class="gallery-item" data-category="aerial" role="listitem">
           <img src="https://via.placeholder.com/600x400.png?text=Fall+Foliage+Landscape" alt="Autumn landscape aerial photography showcasing seasonal colors" loading="lazy">
           <div class="gallery-overlay">
             <h3>Fall Foliage Landscape</h3>
@@ -158,7 +157,7 @@
         </div>
 
         <!-- Inspection Examples -->
-        <div class="gallery-item" data-category="inspection">
+  <div class="gallery-item" data-category="inspection" role="listitem">
           <img src="https://via.placeholder.com/600x400.png?text=Roof+Inspection" alt="Professional roof inspection imagery showing detailed assessment" loading="lazy">
           <div class="gallery-overlay">
             <h3>Roof Inspection</h3>
@@ -167,7 +166,7 @@
           </div>
         </div>
 
-        <div class="gallery-item" data-category="inspection">
+  <div class="gallery-item" data-category="inspection" role="listitem">
           <img src="https://via.placeholder.com/600x400.png?text=Solar+Panel+Survey" alt="Solar panel installation aerial survey for maintenance assessment" loading="lazy">
           <div class="gallery-overlay">
             <h3>Solar Panel Survey</h3>
@@ -177,7 +176,7 @@
         </div>
 
         <!-- Commercial Examples -->
-        <div class="gallery-item" data-category="commercial">
+  <div class="gallery-item" data-category="commercial" role="listitem">
           <img src="https://via.placeholder.com/600x400.png?text=Construction+Progress" alt="Construction site aerial documentation showing project progress" loading="lazy">
           <div class="gallery-overlay">
             <h3>Construction Progress</h3>
@@ -186,7 +185,7 @@
           </div>
         </div>
 
-        <div class="gallery-item" data-category="commercial">
+  <div class="gallery-item" data-category="commercial" role="listitem">
           <img src="https://via.placeholder.com/600x400.png?text=Corporate+Campus" alt="Corporate campus aerial view highlighting facilities and layout" loading="lazy">
           <div class="gallery-overlay">
             <h3>Corporate Campus</h3>
@@ -196,7 +195,7 @@
         </div>
 
         <!-- Events Examples -->
-        <div class="gallery-item" data-category="events">
+  <div class="gallery-item" data-category="events" role="listitem">
           <img src="https://via.placeholder.com/600x400.png?text=Festival+Aerial" alt="Outdoor festival aerial photography capturing crowd and event layout" loading="lazy">
           <div class="gallery-overlay">
             <h3>Community Festival</h3>
@@ -205,7 +204,7 @@
           </div>
         </div>
 
-        <div class="gallery-item" data-category="events">
+  <div class="gallery-item" data-category="events" role="listitem">
           <img src="https://via.placeholder.com/600x400.png?text=Wedding+Venue" alt="Wedding venue aerial photography showcasing ceremony and reception areas" loading="lazy">
           <div class="gallery-overlay">
             <h3>Wedding Venue</h3>
@@ -218,7 +217,7 @@
     </section>
 
     <!-- Call to Action Section -->
-    <section class="gallery-cta">
+  <section class="gallery-cta" aria-label="Gallery Call to Action">
       <h2>Services Coming Soon</h2>
       <p>
         Elevated Optics RVA is preparing to launch professional aerial imaging and inspection services.<br>
@@ -232,7 +231,7 @@
     </section>
 
     <!-- Image Modal (for full-screen viewing) -->
-    <div id="image-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+  <div id="image-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
       <div class="modal-content">
         <span class="modal-close" aria-label="Close modal">&times;</span>
         <img id="modal-image" src="" alt="">
@@ -249,7 +248,7 @@
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer" aria-label="Site Footer">
     <div class="footer-content">
       <div class="footer-section">
         <h3>Elevated Optics RVA</h3>

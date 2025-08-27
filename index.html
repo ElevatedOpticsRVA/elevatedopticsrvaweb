@@ -28,7 +28,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon-16x16.png">
   <link rel="manifest" href="/manifest/site.webmanifest">
-  <link rel="shortcut icon" href="/media/favicon.ico">
   <link rel="icon" href="/media/favicon.ico" type="image/x-icon">
   
   <!-- Fonts -->
@@ -40,13 +39,14 @@
   <link rel="stylesheet" href="/stylesheet/styles.css">
   
   <!-- Structured Data for Local Business -->
+  <!-- Structured Data for Local Business (optimized)-->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Elevated Optics RVA",
     "image": "/media/ElevatedOpticsLogo.png",
-    "description": "Professional FAA Part 107 certified drone services specializing in aerial photography, real estate media, and inspection imaging in Richmond, VA.",
+    "description": "FAA Part 107 certified drone services: aerial photography, real estate media, inspection imaging in Richmond, VA.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Richmond",
@@ -62,49 +62,14 @@
     "telephone": "+1-804-592-9224",
     "priceRange": "$$",
     "openingHours": "Mo-Fr 09:00-17:00",
-    "serviceArea": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": 37.5407,
-        "longitude": -77.4360
-      },
-      "geoRadius": "50000"
-    },
-    "areaServed": [
-      "Richmond, VA",
-      "Henrico County, VA",
-      "Chesterfield County, VA",
-      "Hanover County, VA"
-    ],
+    "areaServed": ["Richmond, VA", "Henrico County, VA", "Chesterfield County, VA", "Hanover County, VA"],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Drone Services",
       "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Aerial Photography",
-            "description": "High-resolution aerial photography for various applications"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Real Estate Photography",
-            "description": "Professional aerial photography for real estate marketing"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Inspection Services",
-            "description": "Aerial inspection imaging for infrastructure and property assessment"
-          }
-        }
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Aerial Photography"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Real Estate Photography"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Inspection Services"}}
       ]
     }
   }
@@ -112,7 +77,7 @@
 </head>
 <body>
   <!-- Skip to main content for accessibility -->
-  <a href="#main-content" class="sr-only">Skip to main content</a>
+  <a href="#main-content" class="sr-only" tabindex="0">Skip to main content</a>
    
   <header class="header">
     <div class="header-content">
@@ -128,49 +93,49 @@
           <li><a href="/contact/">Contact</a></li>
         </ul>
       </nav>
-      <img src="/media/ElevatedOpticsLogo.png" alt="Elevated Optics RVA - Professional Drone Services Logo" class="logo-img" loading="lazy" />
+  <img src="/media/ElevatedOpticsLogo.png" alt="Elevated Optics RVA Logo" class="logo-img" loading="lazy" width="80" height="80" />
     </div>
   </header>
 
   <main id="main-content">
-    <section class="hero" role="banner">
+  <section class="hero" role="banner" aria-label="Aerial Photography Hero">
       <div class="hero-overlay">
         <h1 class="hero-title">Elevated Perspectives. Exceptional Quality.</h1>
         <p class="hero-subtitle">Professional Aerial Photography & Inspection Services in Richmond, VA</p>
-        <a href="/contact/" class="hero-button" role="button">Request a Quote</a>
+  <a href="/contact/" class="hero-button" role="button" tabindex="0">Request a Quote</a>
       </div>
     </section>
 
-    <section class="about" id="about">
+  <section class="about" id="about" aria-label="About Elevated Optics RVA">
       <h2 class="section-title">About Elevated Optics RVA</h2>
       <p>
         Welcome to Elevated Optics RVA — a solo-operated, <strong>FAA Part 107 certified</strong> drone services business based in Richmond, Virginia.<br>
         <br>
         We are preparing to launch professional aerial imaging and inspection services soon. Stay tuned for updates!
       </p>
-      <div class="features-grid">
-        <div class="feature-item">
+  <div class="features-grid" role="list">
+  <div class="feature-item" role="listitem">
           <h3>🏆 FAA Part 107 Certified</h3>
           <p>Fully licensed for commercial drone operations in Virginia and surrounding areas.</p>
         </div>
-        <div class="feature-item">
+  <div class="feature-item" role="listitem">
           <h3>📸 High-Resolution Imaging</h3>
           <p>Professional-grade equipment ready for stunning 4K video and high-resolution photography.</p>
         </div>
-        <div class="feature-item">
+  <div class="feature-item" role="listitem">
           <h3>🏠 Real Estate Specialists</h3>
           <p>Real estate imaging services will be available after launch.</p>
         </div>
-        <div class="feature-item">
+  <div class="feature-item" role="listitem">
           <h3>🔍 Inspection Services</h3>
           <p>Inspection imaging services will be available after launch.</p>
         </div>
       </div>
     </section>
 
-    <section class="services-preview" id="services-preview">
+  <section class="services-preview" id="services-preview" aria-label="Services Preview">
       <h2 class="section-title">Services Coming Soon</h2>
-      <div style="text-align:center; max-width:700px; margin:2rem auto;">
+  <div class="services-preview-content" style="text-align:center; max-width:700px; margin:2rem auto;">
         <p>
           Elevated Optics RVA is preparing to offer aerial photography, real estate imaging, and inspection imaging.<br>
           <br>
@@ -182,27 +147,27 @@
       </div>
     </section>
 
-    <section class="cta-section">
+  <section class="cta-section" aria-label="Call to Action">
       <h2>Stay Tuned!</h2>
       <p>
         We're excited to serve Richmond and the surrounding area soon.<br>
         Follow us for launch updates and to be the first to know when services become available.
       </p>
       <div class="cta-buttons">
-        <a href="/contact/" class="cta-primary">Contact / Connect</a>
-        <a href="https://instagram.com/elevatedopticsrva" class="cta-secondary" target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
+        <a href="/contact/" class="cta-primary" tabindex="0">Contact / Connect</a>
+        <a href="https://instagram.com/elevatedopticsrva" class="cta-secondary" target="_blank" rel="noopener noreferrer" tabindex="0">Follow on Instagram</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" aria-label="Site Footer">
     <div class="footer-content">
-      <div class="footer-section">
+  <div class="footer-section" aria-label="Business Info">
         <h3>Elevated Optics RVA</h3>
         <p>Professional aerial imaging services in Richmond, VA and surrounding areas.</p>
         <p><strong>FAA Part 107 Certified</strong></p>
       </div>
-      <div class="footer-section">
+  <div class="footer-section" aria-label="Service Areas">
         <h3>Service Areas</h3>
         <p>Richmond, VA<br>
         Henrico County<br>
@@ -210,9 +175,9 @@
         Hanover County<br>
         <em>And surrounding areas</em></p>
       </div>
-      <div class="footer-section">
+  <div class="footer-section" aria-label="Quick Links">
         <h3>Quick Links</h3>
-        <nav aria-label="Footer navigation">
+  <nav aria-label="Footer navigation">
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/services/">Services</a></li>
@@ -221,7 +186,7 @@
           </ul>
         </nav>
       </div>
-      <div class="footer-section">
+  <div class="footer-section" aria-label="Contact Info">
         <h3>Contact Info</h3>
         <p>
           <span class="footer-contact-item">📧 <a href="mailto:CoryB@elevatedopticsrva.com">CoryB@elevatedopticsrva.com</a></span><br>
