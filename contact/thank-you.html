@@ -61,33 +61,15 @@
 
     <section class="thank-you-details">
       <div class="thank-you-card">
-        <h2>What Happens Next?</h2>
-        
-        <div class="next-steps">
-          <div class="step-item">
-            <span class="step-icon">📧</span>
-            <div class="step-content">
-              <h3>We'll Review Your Request</h3>
-              <p>Our team will carefully review your project details and requirements within the next few hours.</p>
-            </div>
-          </div>
-          
-          <div class="step-item">
-            <span class="step-icon">💬</span>
-            <div class="step-content">
-              <h3>Personal Response</h3>
-              <p>You'll receive a personalized response from us within <strong>24 hours</strong> with your custom quote and any follow-up questions.</p>
-            </div>
-          </div>
-          
-          <div class="step-item">
-            <span class="step-icon">🚁</span>
-            <div class="step-content">
-              <h3>Schedule Your Shoot</h3>
-              <p>Once approved, we'll work with you to schedule your aerial imaging session at your convenience.</p>
-            </div>
-          </div>
-        </div>
+        <h2>Thank You!</h2>
+        <p>
+          Elevated Optics RVA is preparing to launch professional aerial imaging and inspection services.<br>
+          <br>
+          <strong>No service packages or pricing are available yet.</strong>
+        </p>
+        <p>
+          If you're interested in future services, have questions, or want to connect, please <a href="/contact/">reach out</a> or follow us on <a href="https://instagram.com/elevatedopticsrva" target="_blank" rel="noopener noreferrer">Instagram</a> for updates.
+        </p>
 
         <div class="contact-reminder">
           <h3>Need to Reach Us Sooner?</h3>
@@ -188,6 +170,24 @@
       if (thankYouSection) {
         thankYouSection.appendChild(redirectMessage);
         
+        const countdownInterval = setInterval(function() {
+          countdown--;
+          const countdownElement = document.getElementById('countdown');
+          if (countdownElement) {
+            countdownElement.textContent = countdown;
+          }
+          
+          if (countdown <= 0) {
+            clearInterval(countdownInterval);
+            redirectMessage.textContent = 'Redirecting...';
+          }
+        }, 1000);
+      }
+    });
+  </script>
+</body>
+</html>
+</html>
         const countdownInterval = setInterval(function() {
           countdown--;
           const countdownElement = document.getElementById('countdown');
