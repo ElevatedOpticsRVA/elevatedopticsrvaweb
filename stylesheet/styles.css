@@ -513,18 +513,12 @@ select {
 }
 
 .checkbox-label input[type="checkbox"] {
-  width: auto;
-  margin: 0;
-}
-
-.checkmark {
   width: 20px;
   height: 20px;
-  border: 2px solid #e2e8f0;
+  accent-color: #1e3a8a;
+  margin: 0;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 2px solid #e2e8f0;
 }
 
 .submit-button {
@@ -1784,6 +1778,12 @@ select {
   }
 }
 
+.footer-contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  white-space: nowrap;
+}
 .footer-contact-item {
   display: inline-flex;
   align-items: center;
