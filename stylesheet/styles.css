@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: 'Lora', serif;
-  background-color: #f3f4f6; /* Light Gray */
+  background-color: #e5e7eb; /* Slightly darker light gray */
   color: #1e293b; /* Charcoal */
   line-height: 1.6;
 }
@@ -195,7 +195,7 @@ section {
 }
 
 .about {
-  background: linear-gradient(135deg, #f3f4f6 0%, #e2e8f0 100%); /* Light Gray gradient */
+  background: linear-gradient(135deg, #e5e7eb 0%, #cbd5e1 100%); /* Slightly darker gradient */
   color: #1e293b;
 }
 
